@@ -1,0 +1,2 @@
+command = "/ia:knowledge-graph-generate"
+description = "Analyze multiple documents to extract entities and relationships, outputting a graph structure."

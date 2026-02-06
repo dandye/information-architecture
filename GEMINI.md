@@ -18,6 +18,18 @@ A collection of skills for Information Architecture tasks, designed to help with
 - **[semantic-markup-generate](skills/semantic-markup-generate/SKILL.md)**
   Generate semantic web markup (JSON-LD, Schema.org) for documents. Enhances SEO and machine readability.
 
+- **[semantic-extract](skills/semantic-extract/SKILL.md)**
+  Extract structured data from existing HTML/Markdown content. Identify existing tables, lists, and metadata.
+
+- **[semantic-validate](skills/semantic-validate/SKILL.md)**
+  Validate existing JSON-LD or Microdata against Schema.org standards. Ensure markup correctness for search engines.
+
+- **[knowledge-graph-generate](skills/knowledge-graph-generate/SKILL.md)**
+  Analyze multiple documents to identify entities and relationships, constructing a knowledge graph structure.
+
+- **[ontology-map](skills/ontology-map/SKILL.md)**
+  Map local tags/categories to formal ontologies like SKOS to improve interoperability.
+
 ### Information Architecture
 
 - **[metadata-schema-design](skills/metadata-schema-design/SKILL.md)**
@@ -52,3 +64,7 @@ This extension provides a suite of Information Architecture tools designed to he
 | `/ia:taxonomy` | Develop hierarchical classification systems. | [taxonomy-generate](skills/taxonomy-generate/SKILL.md) |
 | `/ia:thesaurus` | Generate controlled vocabulary thesaurus for content domains. | [thesaurus-generate](skills/thesaurus-generate/SKILL.md) |
 | `/ia:semantic` | Generate semantic web markup (JSON-LD, Schema.org) for documents. | [semantic-markup-generate](skills/semantic-markup-generate/SKILL.md) |
+| `/ia:semantic-extract` | Extract structured data from existing HTML/Markdown content. | [semantic-extract](skills/semantic-extract/SKILL.md) |
+| `/ia:semantic-validate` | Validate existing JSON-LD or Microdata against Schema.org standards. | [semantic-validate](skills/semantic-validate/SKILL.md) |
+| `/ia:knowledge-graph-generate` | Analyze multiple documents to extract entities and relationships. | [knowledge-graph-generate](skills/knowledge-graph-generate/SKILL.md) |
+| `/ia:ontology-map` | Map local content tags/categories to formal ontologies (SKOS). | [ontology-map](skills/ontology-map/SKILL.md) |

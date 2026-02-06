@@ -1,0 +1,2 @@
+command = "/ia:semantic-extract"
+description = "Extract structured data from existing HTML/Markdown content."
