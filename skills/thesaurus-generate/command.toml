@@ -1,0 +1,2 @@
+command = "/ia:thesaurus"
+description = "Generate controlled vocabulary thesaurus for content domains. Creates comprehensive thesauri with preferred terms, broader/narrower/related terms."
