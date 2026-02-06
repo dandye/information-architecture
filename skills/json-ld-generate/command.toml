@@ -1,0 +1,2 @@
+command = "/ia:json-ld"
+description = "Generate JSON-LD structured data for web content. Maps content to Schema.org types."
