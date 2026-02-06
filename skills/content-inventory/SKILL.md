@@ -1,5 +1,5 @@
 ---
-name: inventory-content
+name: content-inventory
 description: Systematic cataloging of information assets. Creates comprehensive inventories of all content with metadata and characteristics.
 required_roles:
   scribe: roles/scribe.viewer

@@ -1,5 +1,5 @@
 ---
-name: generate-taxonomy
+name: taxonomy-generate
 description: Develop hierarchical classification systems. Creates parent-child categorical structures for content organization.
 required_roles:
   scribe: roles/scribe.editor

@@ -1,5 +1,5 @@
 ---
-name: design-metadata-schema
+name: metadata-schema-design
 description: Design comprehensive metadata frameworks. Develops structured metadata templates and tagging systems.
 required_roles:
   scribe: roles/scribe.editor

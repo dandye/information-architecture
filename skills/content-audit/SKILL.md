@@ -1,5 +1,5 @@
 ---
-name: audit-content
+name: content-audit
 description: Comprehensive content quality and maintenance assessment. Evaluates documentation quality, relevance, maintenance needs, and provides actionable recommendations.
 required_roles:
   scribe: roles/scribe.editor

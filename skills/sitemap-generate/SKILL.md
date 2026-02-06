@@ -1,5 +1,5 @@
 ---
-name: generate-sitemap
+name: sitemap-generate
 description: Generate hierarchical site structure and navigation maps. Creates visual representations of information architecture and content relationships.
 required_roles:
   scribe: roles/scribe.viewer

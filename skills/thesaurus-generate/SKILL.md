@@ -1,5 +1,5 @@
 ---
-name: generate-thesaurus
+name: thesaurus-generate
 description: Generate controlled vocabulary thesaurus for content domains. Creates comprehensive thesauri with preferred terms, broader/narrower/related terms.
 required_roles:
   scribe: roles/scribe.editor
