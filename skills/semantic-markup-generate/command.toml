@@ -1,0 +1,2 @@
+command = "/ia:semantic"
+description = "Generate semantic web markup (JSON-LD, Schema.org) for documents. Enhances SEO and machine readability."

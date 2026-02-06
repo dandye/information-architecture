@@ -1,4 +1,4 @@
-# Gemini CLI IA Skills
+# Information Architecture Skills for Gemini CLI
 
 A collection of skills for Information Architecture tasks, designed to help with content analysis, organization, and strategy.
 
@@ -14,6 +14,9 @@ A collection of skills for Information Architecture tasks, designed to help with
 
 - **[content-inventory](skills/content-inventory/SKILL.md)**
   Systematic cataloging of information assets. Creates comprehensive inventories of all content with metadata and characteristics.
+
+- **[semantic-markup-generate](skills/semantic-markup-generate/SKILL.md)**
+  Generate semantic web markup (JSON-LD, Schema.org) for documents. Enhances SEO and machine readability.
 
 ### Information Architecture
 
@@ -48,3 +51,4 @@ This extension provides a suite of Information Architecture tools designed to he
 | `/ia:sitemap` | Generate hierarchical site structure and navigation maps. | [sitemap-generate](skills/sitemap-generate/SKILL.md) |
 | `/ia:taxonomy` | Develop hierarchical classification systems. | [taxonomy-generate](skills/taxonomy-generate/SKILL.md) |
 | `/ia:thesaurus` | Generate controlled vocabulary thesaurus for content domains. | [thesaurus-generate](skills/thesaurus-generate/SKILL.md) |
+| `/ia:semantic` | Generate semantic web markup (JSON-LD, Schema.org) for documents. | [semantic-markup-generate](skills/semantic-markup-generate/SKILL.md) |
