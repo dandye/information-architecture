@@ -1,64 +1,56 @@
 ---
 name: metadata-schema-design
-description: Design comprehensive metadata frameworks and ontologies. Defines schemas, classes, properties, and relationships for CMS and Semantic Web.
+description: Design comprehensive metadata frameworks. Develops structured metadata templates and tagging systems.
 required_roles:
   scribe: roles/scribe.editor
-personas: [information-architect, data-architect, ontologist]
+personas: [information-architect, data-architect, content-strategist]
 ---
 
-# Design Metadata Schema & Ontology Skill
+# Design Metadata Schema Skill
 
-Develop a comprehensive content model, metadata schema, or formal ontology. This skill defines structured fields, validation rules, and semantic relationships to ensure consistency, interoperability, and machine-readability.
+Develop a comprehensive metadata schema for content management. This skill defines structured fields, validation rules, and standards compliance to improve searchability and management.
 
 ## Inputs
 
-- `PATH` - The content domain to apply the schema to (e.g., "/content" or description of domain)
-- `OUTPUT_FORMAT` - (Optional) Format: "json-schema", "xml", "markdown", "turtle", "owl", "rdfxml" (default: "json-schema")
-- `STANDARDS` - (Optional) List of standards to align with: "dublin-core", "schema.org", "skos", "owl" (default: ["dublin-core"])
-- `STRICTNESS` - (Optional) For ontologies: "rdfs", "owl-lite", "owl-dl" (default: "rdfs")
-- `BASE_URI` - (Optional) Base URI for semantic outputs (e.g., "http://example.org/ontology/")
+- `PATH` - The content domain to apply the schema to (e.g., "/content")
+- `OUTPUT_FORMAT` - (Optional) The output format for the schema, e.g., "json-schema", "xml", "markdown" (default: "json-schema")
+- `DUBLIN_CORE` - (Optional) Boolean, whether to align with Dublin Core standards (default: true)
+- `CUSTOM_FIELDS` - (Optional) List of custom business-specific fields to include
+- `VALIDATION_RULES` - (Optional) Boolean, whether to define validation logic for fields (default: true)
 
 ## Workflow
 
-### Step 1: Conceptual Modeling
+### Step 1: Requirement Analysis
 
-Analyze the domain to identify key entities (Classes) and attributes (Properties/Fields).
-- **Entities/Classes**: E.g., Article, Product, Person.
-- **Attributes/Properties**: E.g., Title, Price, Author.
+Analyze the content types at `PATH` to determine metadata needs.
+- Identify common attributes (Title, Date, Author).
+- Identify specific attributes (Product ID, Version, Region).
 
-### Step 2: Definition & Constraints
+### Step 2: Schema Definition
 
-Define the structure based on the `OUTPUT_FORMAT`:
-- **For Schemas (JSON/XML)**: Define Data Types, Required/Optional, Validation Rules.
-- **For Ontologies (Turtle/OWL)**: Define Object Properties (relationships), Datatype Properties, and logical Restrictions.
+Define the fields and their properties.
+- **Standard Fields**: Map to Dublin Core (Title, Creator, Subject, etc.) if enabled.
+- **Custom Fields**: Define fields specified in `CUSTOM_FIELDS` or discovered during analysis.
 
-### Step 3: Standards Alignment
+### Step 3: Constraints & Validation
 
-Map definitions to requested `STANDARDS`.
-- E.g., Map "Title" to `dc:title` or `schema:headline`.
-- E.g., Map "Broader Term" to `skos:broader`.
+If `VALIDATION_RULES` is true, define:
+- **Data Types**: String, Date, Integer, Boolean, Enum.
+- **Required/Optional**: Cardinality constraints.
+- **Controlled Vocabularies**: Allowed values for specific fields.
 
-### Step 4: Output Generation
+### Step 4: Schema Output
 
-Generate the definition file in the requested `OUTPUT_FORMAT`.
+Generate the schema definition in the requested `OUTPUT_FORMAT` (e.g., JSON Schema, XML Schema, or Markdown Table).
 
 ## Required Outputs
 
-A `SCHEMA_OR_ONTOLOGY` document.
-
-**Example (Turtle/Ontology):**
-```turtle
-@prefix : <http://example.org/> .
-:Product a owl:Class .
-:hasPrice a owl:DatatypeProperty ; rdfs:domain :Product .
-```
-
-**Example (JSON Schema):**
-```json
-{ "type": "object", "properties": { "title": { "type": "string" } } }
-```
+A `METADATA_SCHEMA` object in the specified `OUTPUT_FORMAT` containing:
+- **Field Dictionary**: Name, Description, Type, Multiplicity.
+- **Validation Logic**: Rules for data entry.
+- **Mapping**: Correspondence to standards (like Dublin Core).
 
 ## Quick Reference
 
-- **Purpose**: Unify data modeling for CMS (Validation) and Knowledge Graphs (Reasoning).
-- **Tools**: Protégé, JSON Schema Validator.
+- **Purpose**: Standardize content tagging for consistency and interoperability.
+- **Standards**: Dublin Core, Schema.org.
