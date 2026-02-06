@@ -1,0 +1,2 @@
+command = "/ia:user-flow"
+description = "Visualize user paths and interactions. Creates flowcharts representing user journeys to complete specific tasks."

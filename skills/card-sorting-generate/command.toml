@@ -1,0 +1,2 @@
+command = "/ia:card-sort"
+description = "Generate materials for card sorting studies. Creates detailed lists of content items (cards) for user research."
