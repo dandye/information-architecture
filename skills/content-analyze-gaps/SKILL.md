@@ -1,5 +1,5 @@
 ---
-name: content-gaps-analyze
+name: content-analyze-gaps
 description: Identify content gaps and organizational opportunities. Analyzes missing content areas, redundancies, and consolidation opportunities.
 required_roles:
   scribe: roles/scribe.viewer
