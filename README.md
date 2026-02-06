@@ -1,1 +1,1 @@
-# gemini-cli-ia-skills
+GEMINI.md
