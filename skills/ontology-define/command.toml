@@ -1,0 +1,2 @@
+command = "/ia:ontology"
+description = "Design formal ontologies using OWL/RDFS. Defines classes, properties, and relationships."
