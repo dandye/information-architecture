@@ -1,0 +1,2 @@
+command = "/ia:variants-find"
+description = "Identify duplicative documents in a corpus or directory tree. De-dupe them by determining canonical vs deprecated, or analyze missing topics if both are correct variants."

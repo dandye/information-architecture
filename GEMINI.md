@@ -44,6 +44,9 @@ A collection of skills for Information Architecture tasks, designed to help with
 - **[user-flow-generate](skills/user-flow-generate/SKILL.md)**
   Visualize user paths and interactions. Creates flowcharts representing user journeys to complete specific tasks.
 
+- **[variants-find](skills/variants-find/SKILL.md)**
+  Identify duplicative documents. De-dupe them by determining canonical vs deprecated, or analyze missing topics if both are valid variants.
+
 ## Capabilities
 
 This extension provides a suite of Information Architecture tools designed to help you analyze, organize, and structure content effectively.
@@ -67,5 +70,6 @@ This extension provides a suite of Information Architecture tools designed to he
 | `/ia:taxonomy` | Develop hierarchical classification systems. | [taxonomy-generate](skills/taxonomy-generate/SKILL.md) |
 | `/ia:thesaurus` | Generate controlled vocabulary thesaurus for content domains. | [thesaurus-generate](skills/thesaurus-generate/SKILL.md) |
 | `/ia:user-flow` | Visualize user paths and interactions. Creates flowcharts representing user journeys to complete specific tasks. | [user-flow-generate](skills/user-flow-generate/SKILL.md) |
+| `/ia:variants-find` | Identify duplicative documents. De-dupe them by determining canonical vs deprecated, or analyze missing topics if both are valid variants. | [variants-find](skills/variants-find/SKILL.md) |
 | `/ia:semantic` | Generate semantic web markup (JSON-LD, Schema.org) for documents. | [semantic-markup-generate](skills/semantic-markup-generate/SKILL.md) |
 | `/ia:json-ld` | Generate JSON-LD structured data for web content. Maps content to Schema.org types. | [json-ld-generate](skills/json-ld-generate/SKILL.md) |
