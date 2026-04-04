@@ -1,0 +1,2 @@
+command = "/ia:kb-compile"
+description = "Incremental compiler that takes raw source documents and generates a structured Markdown knowledge base wiki."

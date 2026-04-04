@@ -24,6 +24,17 @@ A collection of skills for Information Architecture tasks, designed to help with
 - **[semantic-markup-generate](skills/semantic-markup-generate/SKILL.md)**
   Generate semantic web markup (JSON-LD, Schema.org) for documents. Enhances SEO and machine readability.
 
+### Knowledge Base Management
+
+- **[knowledge-base-compile](skills/knowledge-base-compile/SKILL.md)**
+  Incremental compiler that takes raw source documents and generates a structured Markdown knowledge base wiki.
+
+- **[knowledge-base-lint](skills/knowledge-base-lint/SKILL.md)**
+  Perform health checks on the knowledge base to find inconsistencies, impute missing data, and suggest new article connections.
+
+- **[knowledge-base-qa](skills/knowledge-base-qa/SKILL.md)**
+  Conduct complex research Q&A against the compiled knowledge base, generating rich visual outputs (Markdown, Marp slides, Matplotlib images).
+
 ### Information Architecture
 
 - **[metadata-schema-design](skills/metadata-schema-design/SKILL.md)**
@@ -52,6 +63,7 @@ This extension provides a suite of Information Architecture tools designed to he
 - **Structural Design**: Generate sitemaps, user flows, and design metadata schemas.
 - **Classification & Semantics**: Develop taxonomies, thesauri, and formal ontologies.
 - **Structured Data**: Generate semantic web markup and JSON-LD for documents.
+- **Knowledge Base Management**: Ingest raw data, compile into wikis, perform complex Q&A, and run data integrity health checks.
 
 ## Commands
 
@@ -69,3 +81,6 @@ This extension provides a suite of Information Architecture tools designed to he
 | `/ia:user-flow` | Visualize user paths and interactions. Creates flowcharts representing user journeys to complete specific tasks. | [user-flow-generate](skills/user-flow-generate/SKILL.md) |
 | `/ia:semantic` | Generate semantic web markup (JSON-LD, Schema.org) for documents. | [semantic-markup-generate](skills/semantic-markup-generate/SKILL.md) |
 | `/ia:json-ld` | Generate JSON-LD structured data for web content. Maps content to Schema.org types. | [json-ld-generate](skills/json-ld-generate/SKILL.md) |
+| `/ia:kb-compile` | Incremental compiler that takes raw source documents and generates a structured Markdown knowledge base wiki. | [knowledge-base-compile](skills/knowledge-base-compile/SKILL.md) |
+| `/ia:kb-qa` | Conduct complex research Q&A against the compiled knowledge base, generating rich visual outputs. | [knowledge-base-qa](skills/knowledge-base-qa/SKILL.md) |
+| `/ia:kb-lint` | Perform health checks on the knowledge base to find inconsistencies, impute missing data, and suggest new article connections. | [knowledge-base-lint](skills/knowledge-base-lint/SKILL.md) |
