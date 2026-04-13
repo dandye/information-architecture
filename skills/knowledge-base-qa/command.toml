@@ -1,0 +1,2 @@
+command = "/ia:kb-qa"
+description = "Conduct complex research Q&A against the compiled knowledge base, generating rich visual outputs."

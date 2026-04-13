@@ -1,0 +1,2 @@
+command = "/ia:kb-lint"
+description = "Perform health checks on the knowledge base to find inconsistencies, impute missing data, and suggest new article connections."
