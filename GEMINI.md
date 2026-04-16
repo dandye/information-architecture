@@ -29,6 +29,9 @@ A collection of skills for Information Architecture tasks, designed to help with
 - **[document-tree-generate](skills/document-tree-generate/SKILL.md)**
   Transform lengthy documents into a semantic tree structure. Optimized for context-aware Retrieval-Augmented Generation (RAG) and LLM usage.
 
+- **[domain-model-generate](skills/domain-model-generate/SKILL.md)**
+  Generate Domain-Driven Design (DDD) models. Defines ubiquitous language, bounded contexts, aggregates, and entities.
+
 - **[metadata-schema-design](skills/metadata-schema-design/SKILL.md)**
   Design comprehensive metadata frameworks. Develops structured metadata templates and tagging systems.
 
@@ -52,7 +55,7 @@ A collection of skills for Information Architecture tasks, designed to help with
 This extension provides a suite of Information Architecture tools designed to help you analyze, organize, and structure content effectively.
 
 - **Content Strategy**: Analyze content gaps, audit quality, inventory assets, and generate card sorting materials.
-- **Structural Design**: Generate sitemaps, user flows, and design metadata schemas.
+- **Structural Design**: Generate sitemaps, user flows, design metadata schemas, and create domain models.
 - **Classification & Semantics**: Develop taxonomies, thesauri, and formal ontologies.
 - **Structured Data**: Generate semantic web markup and JSON-LD for documents.
 
@@ -65,6 +68,7 @@ This extension provides a suite of Information Architecture tools designed to he
 | `/ia:inventory` | Systematic cataloging of information assets. | [content-inventory](skills/content-inventory/SKILL.md) |
 | `/ia:card-sort` | Generate materials for card sorting studies. Creates detailed lists of content items (cards) for user research. | [card-sorting-generate](skills/card-sorting-generate/SKILL.md) |
 | `/ia:doc-tree` | Transform lengthy documents into a semantic tree structure optimized for LLMs. | [document-tree-generate](skills/document-tree-generate/SKILL.md) |
+| `/ia:domain-model` | Generate Domain-Driven Design (DDD) models. | [domain-model-generate](skills/domain-model-generate/SKILL.md) |
 | `/ia:metadata` | Design comprehensive metadata frameworks. | [metadata-schema-design](skills/metadata-schema-design/SKILL.md) |
 | `/ia:ontology` | Design formal ontologies using OWL/RDFS. Defines classes, properties, and relationships. | [ontology-define](skills/ontology-define/SKILL.md) |
 | `/ia:sitemap` | Generate hierarchical site structure and navigation maps. | [sitemap-generate](skills/sitemap-generate/SKILL.md) |

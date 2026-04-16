@@ -1,0 +1,2 @@
+command = "/ia:domain-model"
+description = "Generate Domain-Driven Design (DDD) models. Defines ubiquitous language, bounded contexts, aggregates, entities, and value objects."
