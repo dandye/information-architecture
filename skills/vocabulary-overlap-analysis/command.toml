@@ -1,0 +1,2 @@
+command = "/ia:vocab-overlap"
+description = "Analyze vocabulary overlap and identify named entities unique to domain/document corpora."

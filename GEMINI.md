@@ -30,6 +30,9 @@ A collection of skills for Information Architecture tasks, designed to help with
 - **[ontology-map](skills/ontology-map/SKILL.md)**
   Map local tags/categories to formal ontologies like SKOS to improve interoperability.
 
+- **[vocabulary-overlap-analysis](skills/vocabulary-overlap-analysis/SKILL.md)**
+  Analyze vocabulary overlap and identify named entities unique to domain/document corpora.
+
 ### Information Architecture
 
 - **[metadata-schema-design](skills/metadata-schema-design/SKILL.md)**
@@ -68,3 +71,4 @@ This extension provides a suite of Information Architecture tools designed to he
 | `/ia:semantic-validate` | Validate existing JSON-LD or Microdata against Schema.org standards. | [semantic-validate](skills/semantic-validate/SKILL.md) |
 | `/ia:knowledge-graph-generate` | Analyze multiple documents to extract entities and relationships. | [knowledge-graph-generate](skills/knowledge-graph-generate/SKILL.md) |
 | `/ia:ontology-map` | Map local content tags/categories to formal ontologies (SKOS). | [ontology-map](skills/ontology-map/SKILL.md) |
+| `/ia:vocab-overlap` | Analyze vocabulary overlap and identify named entities unique to domain/document corpora. | [vocabulary-overlap-analysis](skills/vocabulary-overlap-analysis/SKILL.md) |
