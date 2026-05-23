@@ -33,6 +33,9 @@ A collection of skills for Information Architecture tasks, designed to help with
 - **[vocabulary-overlap-analysis](skills/vocabulary-overlap-analysis/SKILL.md)**
   Analyze vocabulary overlap and identify named entities unique to domain/document corpora.
 
+- **[named-entity-normalization](skills/named-entity-normalization/SKILL.md)**
+  Normalize named entities and concept variants into canonical forms using controlled vocabularies or standard taxonomies.
+
 ### Information Architecture
 
 - **[metadata-schema-design](skills/metadata-schema-design/SKILL.md)**
@@ -72,3 +75,4 @@ This extension provides a suite of Information Architecture tools designed to he
 | `/ia:knowledge-graph-generate` | Analyze multiple documents to extract entities and relationships. | [knowledge-graph-generate](skills/knowledge-graph-generate/SKILL.md) |
 | `/ia:ontology-map` | Map local content tags/categories to formal ontologies (SKOS). | [ontology-map](skills/ontology-map/SKILL.md) |
 | `/ia:vocab-overlap` | Analyze vocabulary overlap and identify named entities unique to domain/document corpora. | [vocabulary-overlap-analysis](skills/vocabulary-overlap-analysis/SKILL.md) |
+| `/ia:entity-normalize` | Normalize named entities and concept variants into canonical forms using controlled vocabularies or standard taxonomies. | [named-entity-normalization](skills/named-entity-normalization/SKILL.md) |

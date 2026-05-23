@@ -1,0 +1,2 @@
+command = "/ia:entity-normalize"
+description = "Normalize named entities and concept variants into canonical forms using controlled vocabularies or standard taxonomies."
