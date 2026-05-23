@@ -1,0 +1,2 @@
+command = "/ia:ontology-map"
+description = "Map local content tags/categories to formal ontologies (SKOS)."
