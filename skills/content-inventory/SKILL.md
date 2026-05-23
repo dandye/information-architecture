@@ -1,21 +1,22 @@
 ---
 name: content-inventory
-description: Systematic cataloging of information assets. Creates comprehensive inventories of all content with metadata and characteristics.
+description: Systematic cataloging of information assets. Creates comprehensive inventories or card sorting materials from content.
 required_roles:
   scribe: roles/scribe.viewer
-personas: [information-architect, content-manager, librarian]
+personas: [information-architect, content-manager, ux-researcher]
 ---
 
 # Content Inventory Skill
 
-Create a systematic catalog of information assets within a specified path. This skill builds a comprehensive inventory including metadata, file characteristics, and format analysis to support content governance and strategic planning.
+Create a systematic catalog of information assets within a specified path. This skill builds a comprehensive inventory including metadata, file characteristics, and format analysis. It can also generate materials for card sorting studies.
 
 ## Inputs
 
 - `PATH` - The directory or file path to inventory (e.g., "/documentation")
-- `OUTPUT_FORMAT` - (Optional) The output format for the inventory, e.g., "csv", "json", "markdown" (default: "json")
+- `OUTPUT_FORMAT` - (Optional) The output format: "csv", "json", "markdown", "card-sort-csv", "card-sort-print" (default: "json")
 - `METADATA_EXTRACTION` - (Optional) Boolean, whether to extract deep metadata (author, date, tags) (default: true)
 - `FORMAT_ANALYSIS` - (Optional) Boolean, whether to analyze file formats and types (default: true)
+- `SAMPLE_SIZE` - (Optional) Max number of items to include (useful for card sorting or large audits) (default: all)
 
 ## Workflow
 
@@ -23,34 +24,39 @@ Create a systematic catalog of information assets within a specified path. This 
 
 Recursively scan the `PATH` to identify all files and assets.
 - Record file paths, names, and sizes.
-- Identify file types (Markdown, HTML, PDF, Image, etc.).
+- Filter out administrative files.
 
-### Step 2: Metadata Extraction
+### Step 2: Sampling (Optional)
 
-If `METADATA_EXTRACTION` is true, extract metadata from each asset:
-- **System Metadata**: Creation date, modification date, owner.
-- **Embedded Metadata**: Frontmatter (YAML), title headers, tags, categories.
-- **Content Metrics**: Word count, reading time estimation.
+If `SAMPLE_SIZE` is specified:
+- Select a representative sample (e.g., top traffic, key sections, or random).
+- Ensure coverage across the hierarchy.
 
-### Step 3: Format & Structure Analysis
+### Step 3: Metadata Extraction & Formatting
 
-If `FORMAT_ANALYSIS` is true, analyze the structure:
-- **Template Usage**: Identify if standard templates are used.
-- **Hierarchy Depth**: Depth in the directory structure.
-- **Resource Dependencies**: Images or other assets linked.
+Extract metadata based on `METADATA_EXTRACTION` and `OUTPUT_FORMAT`.
+- **Standard Inventory**: Title, URL/Path, Author, Date, Type.
+- **Card Sorting**:
+    - **Label**: Clean, user-friendly title.
+    - **Description**: Short summary/snippet.
+    - **ID**: Unique identifier.
 
-### Step 4: Inventory Report Generation
+### Step 4: Output Generation
 
-Compile the data into a structured inventory format (CSV, JSON, or Markdown Table) as specified by `OUTPUT_FORMAT`.
+Compile the data into the requested `OUTPUT_FORMAT`.
 
 ## Required Outputs
 
-A `CONTENT_INVENTORY_REPORT` in the specified `OUTPUT_FORMAT` containing:
-- **Asset List**: Full list of discovered assets.
-- **Metadata Table**: Columns for Title, URL/Path, Author, Last Modified, Type, Tags.
-- **Summary Statistics**: Total count by type, average age, volume by category.
+A `CONTENT_REPORT` in the specified format.
+
+**Example (Card Sort CSV):**
+```csv
+ID,Label,Description,Url
+1,Reset Password,How to recover account,/auth/reset
+2,Pricing,Subscription tiers,/pricing
+```
 
 ## Quick Reference
 
-- **Purpose**: Establish a baseline understanding of content assets for governance.
-- **Use Case**: Migration planning, audit preparation, consolidation projects.
+- **Purpose**: Governance, Audit, and UX Research (Card Sorting).
+- **Use Case**: Migration planning, creating datasets for OptimalSort/Maze.

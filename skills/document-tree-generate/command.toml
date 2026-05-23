@@ -1,0 +1,2 @@
+command = "/ia:doc-tree"
+description = "Transform lengthy documents into a semantic tree structure optimized for LLMs. Generates hierarchical sections, summaries, and node indices."
