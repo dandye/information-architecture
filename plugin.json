@@ -1,0 +1,7 @@
+{
+    "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+    "name": "information-architecture",
+    "version": "1.0.0",
+    "description": "Information Architecture skills for Gemini, Jetski, and Antigravity agents",
+    "author": "dandye"
+}
